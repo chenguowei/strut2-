@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Struts2Diagram version="2.0">
+  <package name="wap" location="10,9" size="180,71">
+    <action name="index" location="0,0" size="0,0">
+      <result name="home">
+        <resourceEdge source="home" routing="0" target="home.jsp" />
+      </result>
+    </action>
+    <action name="case_*" location="0,0" size="0,0">
+      <result name="more">
+        <resourceEdge source="more" routing="0" target="case.jsp" />
+      </result>
+      <result name="list">
+        <resourceEdge source="list" routing="0" target="caselist.jsp" />
+      </result>
+      <result name="detail">
+        <resourceEdge source="detail" routing="0" target="artile.jsp" />
+      </result>
+      <result name="edulist">
+        <resourceEdge source="edulist" routing="0" target="eduList.jsp" />
+      </result>
+    </action>
+    <action name="pd_*" location="0,0" size="0,0">
+      <result name="more">
+        <resourceEdge source="more" routing="0" target="pds.jsp" />
+      </result>
+    </action>
+    <action name="solu_*" location="0,0" size="0,0">
+      <result name="more">
+        <resourceEdge source="more" routing="0" target="solution.jsp" />
+      </result>
+      <result name="list">
+        <resourceEdge source="list" routing="0" target="caselist.jsp" />
+      </result>
+      <result name="detail">
+        <resourceEdge source="detail" routing="0" target="artile.jsp" />
+      </result>
+      <result name="edulist">
+        <resourceEdge source="edulist" routing="0" target="eduList.jsp" />
+      </result>
+      <result name="solutoinPj">
+        <resourceEdge source="solutoinPj" routing="0" target="solutionPjDetail.jsp" />
+      </result>
+    </action>
+    <action name="market_*" location="0,0" size="0,0">
+      <result name="more">
+        <resourceEdge source="more" routing="0" target="markeActivity.jsp" />
+      </result>
+    </action>
+    <action name="news_*" location="0,0" size="0,0">
+      <result name="more">
+        <resourceEdge source="more" routing="0" target="news.jsp" />
+      </result>
+    </action>
+  </package>
+  <webResource name="home.jsp" path="wap/home.jsp" location="0,0" size="0,0" />
+  <webResource name="case.jsp" path="wap/case.jsp" location="0,0" size="0,0" />
+  <webResource name="pds.jsp" path="wap/pds.jsp" location="0,0" size="0,0" />
+  <webResource name="markeActivity.jsp" path="wap/markeActivity.jsp" location="0,0" size="0,0" />
+  <webResource name="news.jsp" path="wap/news.jsp" location="0,0" size="0,0" />
+  <webResource name="caselist.jsp" path="wap/caselist.jsp" location="0,0" size="0,0" />
+  <webResource name="artile.jsp" path="wap/artile.jsp" location="0,0" size="0,0" />
+  <webResource name="eduList.jsp" path="wap/eduList.jsp" location="0,0" size="0,0" />
+  <webResource name="solution.jsp" path="wap/solution.jsp" location="0,0" size="0,0" />
+  <webResource name="solutionPjDetail.jsp" path="wap/solutionPjDetail.jsp" location="0,0" size="0,0" />
+</Struts2Diagram>
+

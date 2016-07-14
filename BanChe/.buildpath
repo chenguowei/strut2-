@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<buildpath>
+	<buildpathentry kind="src" path="src"/>
+	<buildpathentry kind="src" path="config"/>
+	<buildpathentry kind="src" path="dijing"/>
+	<buildpathentry kind="src" path="json"/>
+	<buildpathentry kind="con" path="org.eclipse.dltk.mod.launching.INTERPRETER_CONTAINER"/>
+	<buildpathentry kind="con" path="org.eclipse.vjet.eclipse.core.JSNATIVE_CONTAINER/JS Native Types"/>
+	<buildpathentry kind="con" path="org.eclipse.vjet.eclipse.core.BROWSER_CONTAINER/Browser SDK"/>
+	<buildpathentry external="true" kind="lib" path="D:/workspace_JEE/BanChe/WebContent/WEB-INF/lib/struts2-core-2.3.16.3.jar"/>
+</buildpath>

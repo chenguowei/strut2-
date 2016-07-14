@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<constant name="struts.devMode" value="true" />
+	<constant name="struts.i18n.encoding" value="utf-8"></constant>
+	<constant name="struts.multipart.maxSize" value="55000000"/>
+	<constant name="struts.ognl.allowStaticMethodAccess" value="true"></constant>  
+	
+	<package name="base" extends="struts-default">
+		<!-- 配置自定义的拦截器 -->
+		<interceptors>
+			<interceptor-stack name="MyDefaultInterceptor">
+				<interceptor-ref name="defaultStack" />
+			</interceptor-stack>
+		</interceptors>
+		<default-interceptor-ref name="MyDefaultInterceptor" />
+
+	</package>
+	
+	<package name="banche" extends="struts-default">
+	
+		<!-- 配置自定义的拦截器 -->
+		<interceptors>
+			
+			<interceptor name="userLoginCheck"
+				class="com.banche.UserLoginInterceptor">				
+			</interceptor>
+			<interceptor-stack name="userLoginInterceptor">
+				<interceptor-ref name="defaultStack" />
+				<interceptor-ref name="userLoginCheck" />
+			</interceptor-stack>
+			
+		</interceptors>
+		
+		<default-action-ref name="default_action"></default-action-ref>
+		<action name="default_action">  
+			<result>/login.jsp</result>
+		</action>
+		
+		<action name="login">  
+			<result>/login.jsp</result>
+		</action>
+				
+		<action name="bc_*_*" class="com.banche.action.{1}Action"
+			method="{2}">
+			<result name="success">/oa/operation_success.jsp</result>
+			<result name="failure">/oa/operation_failure.jsp</result>
+			<result name="show" >/{1}/{2}.jsp</result>
+			<result name="input">/user/{1}/{2}.jsp</result>
+			<result name="nologin" type="redirect">/login.jsp</result>
+			<result name="noAuth" type="redirect">/noAuth.jsp</result>
+			<result name="rePath" type="chain">${rePath}</result>
+			<result name="download" type="chain">download</result>
+			<interceptor-ref name="userLoginInterceptor" />
+		</action>
+		
+		<action name="SecurityCodeImageAction" 
+	    	class="com.dijing.server.checkcoder.SecurityCodeImageAction">
+	        <result name="success" type="stream">
+	            <param name="contentType">image/jpeg</param>
+	            <param name="inputName">imageStream</param>
+	            <param name="bufferSize">2048</param>
+	        </result>
+	    </action>
+	    
+	    <action name="userLogin" class="com.banche.action.LoginAction"
+			method="login">
+			<!-- 重定向到另一个action-->
+			<result name="success" type="redirectAction">bc_Driver_driverList</result>
+			<result name="failure">/login.jsp</result>
+			<result name="show">/html/{1}/{2}/{3}.jsp</result>
+			<result name="input">/login.jsp</result>
+		</action>
+		
+		<action name="userLogout" class="com.banche.action.LogoutAction"
+			method="logout">
+			<result name="success" type="redirect">/login.jsp</result>
+		</action>
+						
+	</package>
+	
+</struts>    

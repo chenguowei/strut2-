@@ -1,0 +1,155 @@
+.p01,.p02,.p03,.p04,.p05,.p06{
+	float: left;
+	text-align: center;
+	line-height: 94px;
+	font-size: 14px;
+	height: 94px
+}
+.p01{width: 207px;color: #3c4551;}
+.p02{width: 142px;color: #3c4551;}
+.p03{width: 45px;color: #3c4551;}
+.p04{width: 200px;color: #3c4551;}
+.p05{width: 54px; color:#f08586;}
+.p06{width: 54px; color:#66bf6d;}
+.plist_1{
+	line-height: 94px;
+	float: left;
+	width: 120px;
+	text-align: center;
+	border: solid 1px #d6e1ee;
+	
+}
+.plist_2{
+	height: 94px;
+	width: 670px;
+	float: left;
+	border: solid 1px #d6e1ee;
+}
+.plist_3{
+	float: left;
+	width: 147px;
+	text-align: center;
+	border: solid 1px #d6e1ee;
+	cursor: pointer;
+}
+.pad{margin-left: 180px;}
+.pad1{margin-left: 40px;}
+.pad2{margin-left: 65px;}
+.pad3{margin-left: 75px;}
+.btn_bj,.btn_sc{width: 50%;float: left;text-align: center;line-height: 94px;color: white;font-size: 14px;}
+.btn_bj{background-color: #44e0de;}
+.btn_sc{background-color: #f08586;}
+.editbox{
+	border: solid 1px #d6e1ee;
+	display: none;
+}
+.edit_l{
+	float: left;
+	padding-left: 30px;
+	width: 384px;
+}
+.edit_l .textstyle{
+	float: left;
+}
+.preview{
+	width: 273px;
+	min-height: 124px;
+	background-color: #f4f4fe;
+	float: left;
+	margin-left: 27px;
+}
+.btn_f{
+	width: 100px;
+	line-height: 50px;
+	background-image: url(../img/file.png);
+	float: right;
+	overflow: hidden;
+	color: #fb4118;
+	text-align: center;
+	position: relative;
+	z-index: 1;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.btn_f input{
+	height: 50px;
+	cursor: pointer;
+	opacity: 0;
+	filter:Alpha(opacity=0);
+	position: absolute;
+	z-index: 2;
+	top: 0;
+	left: 0;
+}
+.link{
+	float: left;
+	width:100%;
+	line-height: 50px;
+	margin-bottom: 50px;
+}
+.link input{
+	width: 304px;
+	height: 50px;
+	margin-left: 8px;
+	border: none;
+	background-image: url(../img/link.png);
+}
+.edit_r{
+	float: left;
+	padding-left: 110px;
+}
+.pad4{
+	padding-bottom: 50px;
+	line-height: 50px;
+}
+.pad5{
+	padding-bottom: 42px;
+}
+.pad6{
+	padding-bottom: 50px;
+	line-height: 50px;
+}
+.pad7{
+	padding-bottom: 42px;
+	line-height: 50px;
+}
+.pad6 input,.pad7 input,.pad4 input{
+	width: 304px;
+	height: 50px;
+	border: none;
+	background-image: url(../img/link.png);
+}
+.pad7 input,.pad4 input{
+	margin-left: 15px;
+}
+.pad5 input{
+	margin-left: 40px;
+}
+.add_box{
+	width: 915px;
+	margin: 0 auto;
+	border: solid 1px #d6e1ee;
+	padding-right: 30px;
+	padding-bottom: 30px;
+}
+.button_bc{
+	width: 90px;
+	float: right;
+	background: #bce9fe;
+	text-align: center;
+	line-height: 40px;
+	margin-right: 20px;
+	color: #FAFAFA;
+	cursor: pointer;
+}
+.text{
+	font-size:12px;
+	color:#fb4118;
+	padding-left:90px;
+}
+.title{
+	font-size: 18px;
+	text-align:center;
+	line-height:50px;
+	font-weight:bold;
+}

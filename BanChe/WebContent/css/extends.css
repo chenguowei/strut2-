@@ -1,0 +1,18 @@
+
+.fr {
+	padding-top: 3px;
+	/*float: left;*/
+	color: #F08586;
+	max-width: 45px;
+	line-height: 0px;
+	font-size: 14px;
+}
+.fr span { color: #F08586;}
+.fr input { 
+	font-family: "Î¢ÈíÑÅºÚ";
+	width: 30px;
+	border: medium none;				
+	color: #F08586;
+	font-size: 14px;
+	height:13px;
+}

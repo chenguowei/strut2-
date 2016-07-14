@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Struts2Diagram version="2.0">
+  <package name="base" location="0,0" size="0,0" />
+  <webResource name="orgaizatioinList.jsp" path="/jsp/orgaization/page/orgaizatioinList.jsp" location="92,219" size="0,0" />
+  <webResource name="orgaizatioinSave.jsp" path="/jsp/orgaization/page/orgaizatioinSave.jsp" location="402,201" size="0,0" />
+  <webResource name="orgaizatioinUpdate.jsp" path="/jsp/orgaization/page/orgaizatioinUpdate.jsp" location="0,0" size="0,0" />
+</Struts2Diagram>
+
